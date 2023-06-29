@@ -1,0 +1,52 @@
+:root {
+    --color-primary: #08b2c9;
+    --color-secondary: #28527a;
+    --color-light: #dbf6e9;
+    --color-dark: #151515;
+  }
+
+  .favoritesStyles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.01rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    padding-top: 1rem;
+    margin: 0.5rem;
+    flex-direction: row;
+    margin-top: 3rem;
+    color: var(--color-primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .orderFilter {
+    display: flex;
+    flex-direction: inherit;
+    z-index: -1;
+    width: 10rem;
+    height: 2rem;
+    margin-top: -4.5rem;
+    margin-left: -26rem;
+    background-color: var(--color-secondary);
+    border-radius: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.5rem;
+  }
+
+  .filter {
+      display: flex;
+      flex-direction: inherit;
+      z-index: -1;
+      width: 10rem;
+      height: 2rem;
+      margin-top: -4.5rem;
+      margin-left: 1rem;
+      background-color: var(--color-primary);
+      border-radius: 2rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size:1.5rem;
+    }
+  
+
+
+

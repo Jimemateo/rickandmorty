@@ -1,0 +1,53 @@
+:root {
+    --color-primary: #08b2c9;
+    --color-secondary: #28527a;
+    --color-light: #dbf6e9;
+    --color-dark: #151515;
+  }
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: 500px;
+  margin: 3rem;
+  margin-left: 30rem;
+  padding: 20px;
+  color: var(--color-light);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://ae01.alicdn.com/kf/HTB1GjANav1TBuNjy0Fjq6yjyXXai/1-unidad-de-insignias-de-acr-lico-de-personajes-de-dibujos-animados-icono-en-la-mochila.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.emailStyle {
+    margin-top: 15rem;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.inputStyle {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.formButton {
+    height: 2.5rem;
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 19rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    border: none;
+    width:5%;
+    padding: 0.1rem;
+    color: var(--color-light) ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,72 @@
+
+:root {
+    --color-primary: #08b2c9;
+    --color-secondary: #28527a;
+    --color-light: #dbf6e9;
+    --color-dark: #151515;
+  }
+
+  .h1Style {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-secondary);
+    margin-left: 10rem;
+    font-size: 8rem;
+    font-style: oblique;
+    text-shadow: 0 0 5px var(--color-light);
+    animation: textShadowAnimation 2s infinite alternate;
+    text-align: center;
+
+  }
+
+  @keyframes textShadowAnimation {
+    0% {
+      text-shadow: 0 0 5px var(--color-light);
+    }
+    100% {
+      text-shadow: 0 0 5px var(--color-primary);
+    }
+  }
+
+  .h3Style {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-secondary);
+    margin-left: 10rem;
+    font-size: 6rem;
+    font-style: oblique;
+    text-shadow: 0 0 5px var(--color-primary);
+    animation: textShadowAnimation 2s infinite alternate;
+    text-align: center;
+
+  }
+
+  @keyframes textShadowAnimation {
+    0% {
+      text-shadow: 0 0 5px var(--color-primary);
+    }
+    100% {
+      text-shadow: 0 0 5px var(--color-light);
+    }
+  }
+  
+  .newH3Style {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-secondary);
+    margin-left: 10rem;
+    font-size: 4rem;
+    font-style: oblique;
+    text-shadow: 0 0 5px var(--color-light);
+    animation: textShadowAnimation 2s infinite alternate;
+    text-align: center;
+
+  }
+
+  @keyframes textShadowAnimation {
+    0% {
+      text-shadow: 0 0 5px var(--color-light);
+    }
+    100% {
+      text-shadow: 0 0 5px var(--color-primary);
+    }
+  }
+
+  
