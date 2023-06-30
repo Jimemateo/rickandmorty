@@ -23,7 +23,7 @@ const Detail = () => {
     <div> 
       {character.name && (
         <div className={styles.detailStyle}> 
-          {character.name && <h3>Name: {character.name} </h3>}
+          {character.name && <h2>Name:  {character.name} </h2>}
           {character.image && (
             <img src={character.image}  alt = {character.name} className={styles.roundImage} />
           )}
