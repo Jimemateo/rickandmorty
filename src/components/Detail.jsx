@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import styles from './Detail.module.css'
 
 const Detail = () => {
     const {id} = useParams();
@@ -21,10 +22,10 @@ const Detail = () => {
    return (
     <div> 
       {character.name && (
-        <div> 
-          {character.name && <h1>Name:{character.name} </h1>}
+        <div className={styles.detailStyle}> 
+          {character.name && <h3>Name: {character.name} </h3>}
           {character.image && (
-            <img src={character.image} alt = {character.name}/>
+            <img src={character.image}  alt = {character.name} className={styles.roundImage} />
           )}
         </div>
 
