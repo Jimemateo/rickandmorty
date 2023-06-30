@@ -71,7 +71,7 @@ function App() {
          <figure className='Morty'>
             <img className={styles.mortyImgStyle} src={Morty} alt='Morty'/>
          </figure>
-
+         
          {
          location.pathname !== '/'
          ? <Nav onSearch={onSearch} />
