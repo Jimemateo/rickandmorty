@@ -3,6 +3,7 @@ import styles from './card.module.css';
 
 const Cards = ({ characters, onClose}) => {
   console.log("IDs de personajes:", characters.map((character) => character.id));
+
   
   return (
     <div className ={styles.styleContainer}>

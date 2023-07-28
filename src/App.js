@@ -13,8 +13,8 @@ import Morty from './img/morty.jpg';
 import Form from './components/Form';
 import Favorites from './components/Favorites';
 
-const email = 'jimemateo@gmail.com';
-const password = 'jime123';
+const URL = 'http://localhost:3001/rickandmorty/login/';
+
 function App() {
 
    const location = useLocation();
@@ -22,10 +22,18 @@ function App() {
    const [characters, setCharacters] = useState([]);
    const [access, setAccess] = useState(false);
 
-   const login = (userData) => {
-      if (userData.email === email && userData.password === password){
-         setAccess(true);
-         navigate('/home');
+   const login = async (userData) => {
+      try {
+         const { email, password } = userData;
+         const {data} = await axios(URL + `?email=${email}&password=${password}`)
+         const { access } = data;
+         
+         setAccess(access);
+         access && navigate('/home');
+
+      } catch (error) {
+         console.log(error.message);
+         
       }
    }
    
@@ -34,24 +42,21 @@ function App() {
    }, [access]);
  
 
-   const onSearch = (id) => {
-         
+   const onSearch = async (id) => {
+      try {
          const repeated = characters.find((item) => item.id === Number (id))
          if (repeated) return alert ('That character was already add!')
-            axios(`https://rickandmortyapi.com/api/character/${id}`)
-            .then(response => response.data)
-            .then ((data) => {
+
+         const {data} = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+                      
                if (data.name) {
                   setCharacters((oldChars) => [...oldChars, data]);
-               } else {
-                  window.alert('There´s nothing here. Searching is pain, you better go back and try again');
-               }
-            })
-            .catch (() =>{
-               window.alert('That character is not in this universe. Maybe search again?')
-
-            });
+               }                
+            } catch (error) {
+            alert('There´s nothing here. Searching is pain, you better go back and try again');
+            alert('That character is not in this universe. Maybe search again?')
       }
+   }
 
       const onClose = (id) => {
          const charactersFiltered = characters.filter(character => 
