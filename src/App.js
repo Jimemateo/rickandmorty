@@ -54,7 +54,7 @@ function App() {
                }                
             } catch (error) {
             alert('There´s nothing here. Searching is pain, you better go back and try again');
-            alert('That character is not in this universe. Maybe search again?')
+            //alert('That character is not in this universe. Maybe search again?')
       }
    }
 
